@@ -1,10 +1,8 @@
 export interface IWoman {
-    createdAt: string;
     name: string;
-    birth:  string;
+    birth:  number;
     title:  string;
     image:  string;
     phrase:  string;
     discoveries:  string;
-    id: string;
 }

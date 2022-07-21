@@ -1,6 +1,6 @@
 <p>Woman list:</p>
-
-<div>
-
-    
-</div>
+<app-woman>
+    *ngFor="let woman of womans"
+    [woman]="woman"
+    [canDelete]="true"
+</app-woman>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IWoman } from './models/woman.models';
+import { womans } from './woman-list.config';
 
 @Component({
   selector: 'app-woman-list',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WomanListComponent implements OnInit {
 
-  public womans: IWoman[]
+  public womans: IWoman[] = womans as IWoman[];
 
   constructor() { }
 
