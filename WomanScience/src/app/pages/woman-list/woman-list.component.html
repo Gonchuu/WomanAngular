@@ -1,6 +1,14 @@
-<p>Woman list:</p>
-<app-woman>
-    *ngFor="let woman of womans"
+<p>Woman list</p>
+<button (click)="onEdit()">Edit</button>
+<!--creo un input [()] para modificar tanto flujo de entrada como de salida
+Será necesario importar FormsModule en app.Module.ts
+Y creo propiedad para guardar el valor del input-->
+<input [(ngModel)]= "filterValue" (change)= "onFilter()">
+<div class="character-list">
+  <app-woman
+    *ngFor="let woman of filteredWomans"
     [woman]="woman"
-    [canDelete]="true"
-</app-woman>
+    [canDelete]="canEdit"
+    (delete)="onDelete(woman.name)"
+  ></app-woman>
+</div>
