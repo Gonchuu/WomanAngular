@@ -10,7 +10,9 @@ export class HeaderComponent implements OnInit {
 
   public selectedRoute?: string;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    ) { }
 
   ngOnInit(): void {
     this.router.events.subscribe((event)=> {
