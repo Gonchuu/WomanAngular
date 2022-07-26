@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,17 +9,16 @@ import { WomanDetailComponent } from './pages/woman-detail/woman-detail.componen
 import { WomanDetailModule } from './pages/woman-detail/woman-detail.module';
 import { WomanListModule } from './pages/woman-list/woman-list.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    WomanListModule,
-    HomeModule,
-    WomanDetailModule
+    CoreModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

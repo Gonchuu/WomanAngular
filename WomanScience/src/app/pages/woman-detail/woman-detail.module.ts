@@ -13,7 +13,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     WomanDetailRoutingModule,
-    RouterModule
+    RouterModule,
+    
   ]
 })
 export class WomanDetailModule { }

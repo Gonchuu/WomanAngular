@@ -1,3 +1,4 @@
+import { WomanListRoutingModule } from './woman-list-routing.module';
 import { RouterModule } from '@angular/router';
 import { WomanComponent } from './components/woman/woman.component';
 import { WomanListComponent } from './woman-list.component';
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    WomanListRoutingModule,
   ]
 })
 export class WomanListModule { }

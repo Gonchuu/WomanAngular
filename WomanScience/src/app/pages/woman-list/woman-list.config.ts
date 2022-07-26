@@ -1,6 +1,7 @@
 
 export const womans = [
     {
+        "id": "1",
         "name": "Marie Curie",
         "birth": 1867,
         "title": "Física y Química",
@@ -10,6 +11,7 @@ export const womans = [
         "-Primera mujer que obtuvo un doctorado en Francia-Pionera en la investigacion sobre la radioactividad- Fundó el instituto Curie en París-Ganó dos Premios Nobel-Descubrio dos elementos, Polonio y Radio",
     },
     {
+        "id": "2",
         "name": "Lillian Gilbreth",
         "birth": 1878,
         "title": "Psicóloga e Ingeniera Industrial",
@@ -20,6 +22,7 @@ export const womans = [
         "-Pionera en Ergonometría, en sus estudios de tiempo y movimientos y en psicología organizacional-Primera mujer que formó parte de la sociedad estadounidense de ingenieros mecánicos-Reinventó el espacio de la cocina",
     },
     {
+        "id": "3",
         "name": "Edith Clarke",
         "birth": 1883,
         "title": "Ingeniera Eléctrica",
@@ -30,6 +33,7 @@ export const womans = [
         "-inventó una calculadora gráfica para ayudar a resolver ecuaciones que contenian funciones hiperbólicas-creó algunos de los primeros softwares para ingeniería eléctrica-experta en circuitos equivalentes y en análisis gráfico-primera mujer ingeniera eléctrica",
     },
     {
+        "id": "4",
         "name": "Gerty Cori",
         "birth": 1896,
         "title": "Bioquímica",
@@ -40,6 +44,7 @@ export const womans = [
         "-su trabajo nos ha hecho entender el metabolismo de los carbohidratos- fue una de las descubridoras del ciclo de cori-ganó un Premio Nobel en fisiología o medicina",
     },
     {
+        "id": "5",
         "name": "Annie Easley",
         "birth": 1933,
         "title": "Programadora Informática, Matemática y Científica Espacial",
@@ -50,6 +55,7 @@ export const womans = [
         "-Llevó a cabo importantes investigaciones sobre energías alternativas-ayudó a crear el software para el cohete centauro-fue coautora de muchos artículos sobre cohetes impulsados por energía nuclear y sobre centrales nucleares.",
     },
     {
+        "id": "6",
         "name": "Jane Goodall",
         "birth": 1934,
         "title": "Primatóloga, Etóloga y Antropóloga",

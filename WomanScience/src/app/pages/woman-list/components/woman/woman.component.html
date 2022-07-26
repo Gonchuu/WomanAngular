@@ -9,5 +9,5 @@
     <p class="woman__discoveries">{{ woman.discoveries }}</p>
     <button class="woman__delete" *ngIf="canDelete"
     (click)="onDelete()">Delete</button>
-    <a [routerLink]= "['/detail', woman.name]" >Ver más</a>
+    <a [routerLink]= "['/detail', woman.id]" >Ver más</a>
 </div>

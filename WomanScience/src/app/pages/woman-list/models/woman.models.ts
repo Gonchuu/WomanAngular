@@ -1,4 +1,5 @@
 export interface IWoman {
+    id: string;
     name: string;
     birth:  number;
     title:  string;
