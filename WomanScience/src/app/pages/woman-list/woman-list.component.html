@@ -5,7 +5,7 @@ Será necesario importar FormsModule en app.Module.ts
 Y creo propiedad para guardar el valor del input-->
 <input [(ngModel)]= "filterValue" (change)= "onFilter()">
 <div class="character-list">
-  <app-woman
+  <app-woman class="carta"
     *ngFor="let woman of filteredWomans"
     [woman]="woman"
     [canDelete]="canEdit"

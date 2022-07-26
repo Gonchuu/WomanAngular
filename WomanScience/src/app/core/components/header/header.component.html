@@ -1,4 +1,14 @@
 <div>
-    <p><a [routerLink]= "['']">Home</a></p>
-    <a [routerLink]= "['/woman-list']">Parrilla</a>
+    <a 
+        [routerLink]= "['']"
+        [ngClass]="{
+            'link--active': selectedRoute === ''
+        }"
+    >Home</a>
+    <a 
+        [routerLink]= "['/woman-list']"
+        [ngClass]="{
+            'link--active': selectedRoute === 'woman-list'
+        }"
+    >Parrilla</a>
 </div>
