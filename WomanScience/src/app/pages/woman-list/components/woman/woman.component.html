@@ -1,7 +1,13 @@
 <!--Aquí pintaremos al personaje woman-->
-<div>
-    <img>
-    <p>nombre</p>
-    <p>frase del personaje</p>
-    <button>Delete</button>
+<div class="woman" 
+*ngIf="woman" 
+(click)="onClick()" 
+[ngClass]="{'woman--active': isSelected}">
+    <img class="woman__img" [src]="woman.image">
+    <p class="woman__name">{{ woman.name }}</p>
+    <p class="woman__title">{{ woman.title }}</p>
+    <p class="woman__discoveries">{{ woman.discoveries }}</p>
+    <button class="woman__delete" *ngIf="canDelete"
+    (click)="onDelete()">Delete</button>
+    <a [routerLink]= "['/detail', woman.name]" >Ver más</a>
 </div>

@@ -3,18 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WomanListComponent } from './pages/woman-list/woman-list.component';
-import { WomanComponent } from './pages/woman-list/components/woman/woman.component';
+import { HomeModule } from './pages/home/home.module';
+import { WomanDetailComponent } from './pages/woman-detail/woman-detail.component';
+import { WomanDetailModule } from './pages/woman-detail/woman-detail.module';
+import { WomanListModule } from './pages/woman-list/woman-list.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WomanListComponent,
-    WomanComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WomanListModule,
+    HomeModule,
+    WomanDetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]
