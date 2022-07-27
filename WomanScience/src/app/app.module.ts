@@ -8,11 +8,13 @@ import { HomeModule } from './pages/home/home.module';
 import { WomanDetailComponent } from './pages/woman-detail/woman-detail.component';
 import { WomanDetailModule } from './pages/woman-detail/woman-detail.module';
 import { WomanListModule } from './pages/woman-list/woman-list.module';
+import { FormComponent } from './shared/components/form/form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,

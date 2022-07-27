@@ -4,7 +4,7 @@
 (click)="onClick()" 
 [ngClass]="{'woman--active': isSelected}">
     <img class="woman__img" [src]="woman.image">
-    <p class="woman__name">{{ woman.name }}</p>
+    <p class="woman__name">{{ woman.name | uppercase }}</p>
     <p class="woman__title">{{ woman.title }}</p>
     <p class="woman__discoveries">{{ woman.discoveries }}</p>
     <button class="woman__delete" *ngIf="canDelete"

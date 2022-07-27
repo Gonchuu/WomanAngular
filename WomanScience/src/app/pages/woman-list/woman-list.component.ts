@@ -23,7 +23,7 @@ export class WomanListComponent implements OnInit {
       this.womans = womans;
       this.filteredWomans = womans;
     }
-    )
+    );
 
   }
 
@@ -31,15 +31,26 @@ export class WomanListComponent implements OnInit {
     this.canEdit = !this.canEdit;
   }
 
-  public onDelete(name: string) {
-    //filtra el personaje cuyo name sea distinto al name que quiera eliminar
-    this.womans = this.womans?.filter((woman) => woman.name !== name);
-  }
-
-  public onFilter() {
-    //filtramos los personajes según el nombre que escriba el usuario
-    this.filteredWomans = this.womans?.filter((woman) => {
-      return woman.name.toLowerCase().includes(this.filterValue.toLowerCase());
+  public onDelete(id: string) {
+    this.womansService.deleteWoman(id).subscribe((woman) => {
+      console.log('Delete', woman);
+      //llamo a la función getWomans para traer a los personajes tras eliminar
+      this.getWomans();
     });
   }
-}
+
+    public onFilter() {
+      //filtramos los personajes según el nombre que escriba el usuario
+      this.filteredWomans = this.womans?.filter((woman) => {
+        return woman.name.toLowerCase().includes(this.filterValue.toLowerCase());
+      });
+    }
+  
+    //creo función para llamar de nuevo a la API cada vez que elimine personajes
+    private getWomans() {
+      this.womansService.getWomans().subscribe((womans) => {
+        this.womans = womans;
+        this.filteredWomans = womans;
+      });
+    }
+  }
